@@ -114,6 +114,7 @@ public class ViewClient {
 
         private void createRegistrationWindow() {
             registrationFrame.setBounds(677, 365, 566, 350);
+            registrationFrame.setIconImage(new ImageIcon(Objects.requireNonNull(this.getClass().getClassLoader().getResource("icon.png"))).getImage());
             registrationFrame.setResizable(false); // нельзя менять размер окна
             registrationFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // закрытие программы
             registrationFrame.setLayout(null);
@@ -308,6 +309,7 @@ public class ViewClient {
 
         private void createPaintFrame() {
             paintFrame = new PaintFrame("Multi-user Paint");
+            paintFrame.setIconImage(new ImageIcon(Objects.requireNonNull(this.getClass().getClassLoader().getResource("icon.png"))).getImage());
             paintFrame.setBounds(525, 271, 870, 538);
             paintFrame.setResizable(false);
             paintFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
